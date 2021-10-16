@@ -1,0 +1,24 @@
+{
+  "name": "truffle",
+  "version": "1.0.0",
+  "description": "Simple App Powered By Ethereum",
+  "main": "truffle-config.js",
+  "scripts": {
+    "dev": "lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@openzeppelin/contracts": "^4.3.2",
+    "ganache-cli": "^6.12.2"
+  },
+  "dependencies": {
+    "@chainlink/contracts": "^0.2.2",
+    "truffle-hdwallet-provider": "^1.0.17"
+  }
+}

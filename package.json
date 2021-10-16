@@ -1,0 +1,12 @@
+{
+  "name": "web3-sample",
+  "version": "1.0.0",
+  "author": "jenninat0r",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "cra",
+    "truffle"
+  ],
+  "packageManager": "yarn@3.0.2"
+}
