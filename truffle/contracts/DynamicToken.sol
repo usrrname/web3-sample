@@ -15,7 +15,7 @@ contract DynamicToken is Ownable, ERC721URIStorage {
     /// @notice Name and symbol of the non fungible token, as defined in ERC721.
     string public constant NAME = "DNFT";
     string public constant SYMBOL = "ABCD";
-    uint256 private startingPrice = 500 ether;
+    uint256 private startingPrice = 100 ether;
 
     /*** DATATYPES ***/
     struct Token {
@@ -74,7 +74,7 @@ contract DynamicToken is Ownable, ERC721URIStorage {
         return claimant == indexToOwner[_tokenId];
     }
 
-    function destroy(uint256 tokenId) internal virtual {
+    function destroy(uint256 tokenId) internal virtual onlyOwner {
         _burn(tokenId);
     }
 

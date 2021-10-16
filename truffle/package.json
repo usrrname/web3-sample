@@ -8,6 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "directories": {
+    "contracts": "./build/contracts",
     "test": "test"
   },
   "keywords": [],
@@ -15,7 +16,8 @@
   "license": "ISC",
   "devDependencies": {
     "@openzeppelin/contracts": "^4.3.2",
-    "ganache-cli": "^6.12.2"
+    "ganache-cli": "^6.12.2",
+    "solhint": "^3.3.6"
   },
   "dependencies": {
     "@chainlink/contracts": "^0.2.2",

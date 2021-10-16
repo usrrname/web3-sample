@@ -18,21 +18,20 @@ module.exports = {
   networks: {
     development: {
       host: "127.0.0.1",
-      port: 8545,
+      port: 9545,
       network_id: "*",
     },
-    ropsten: {
-      provider: () =>
-        new HDWalletProvider(mnemonic, `${process.env.RINKEBY_INFURA_API}`),
-      network_id: 3, // official id of the ropsten network
-    },
+    //   ropsten: {
+    //     provider: () =>
+    //       new HDWalletProvider(mnemonic, `${process.env.RINKEBY_INFURA_API}`),
+    //     network_id: 3, // official id of the ropsten network
+    //   },
   },
   //  test: {
   //    host: "127.0.0.1",
   //    port: 7545,
   //    network_id: "*"
   //  }
-
   //
   // Truffle DB is currently disabled by default; to enable it, change enabled:
   // false to enabled: true. The default storage location can also be
