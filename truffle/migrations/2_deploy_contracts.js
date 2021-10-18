@@ -1,5 +1,1 @@
-const DynamicToken = artifacts.require("DynamicToken");
-
-module.exports = function (deployer) {
-  deployer.deploy(DynamicToken);
-};
+module.exports = require("./deploy_contracts")(artifacts, web3);

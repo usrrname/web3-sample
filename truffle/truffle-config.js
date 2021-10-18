@@ -1,9 +1,12 @@
 const HDWalletProvider = require("truffle-hdwallet-provider");
-
+require("ts-node").register({
+  files: true,
+});
 // 12-word mnemonic
 const mnemonic = process.env.TWELVE_WORD_MNEMONIC;
 
 module.exports = {
+  test_file_extension_regexp: /.*\.ts$/,
   compilers: {
     solc: {
       version: "^0.8.0",
